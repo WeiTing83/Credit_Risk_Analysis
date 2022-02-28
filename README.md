@@ -12,38 +12,22 @@ Because it is imbalance case, the high number of low-risk
 population cause its precision are almost 100%. Therefore, I will
 evaluate high-risk sensitivity first.
 >
-Logistic Regression Classifier	
---------------------------------------------				
-	|original sampling	|RandomOverSampler|	SMOTE Oversampling	|undersampling	|combination sampling
---------------------------------------------------------------------------------------------------
-balanced_accuracy_score|	50%|	63%|	62%|	62%|	63%
--------------------------------------------------------------------------------
-precision-high risk|		|1%|	1%|	1%|	1%
--------------------------------------------------------------
-sensitivity-high risk|		|62%	|56%	|67%	|68%
-------------------------------------------------------------------
-F1-high risk|		|2%	|2%	|2%	2|%
-----------------------------------------------------
+![image](https://user-images.githubusercontent.com/90749275/155944117-19fd167e-12c7-4868-bead-9584e383ec6e.png)
 >
- Ensemble Classifiers
---------------------------------------------------------		
-	 |BalancedRandomForestClassifier|	EasyEnsembleClassifier
---------------------------------------------------------
-balanced_accuracy_score|	77%|	92%
---------------------------------------------------------
-sensitivity-high risk|	66%|	89%
----------------------------------------------------
-F1-high risk|	6%|	16%
------------------------------------------------------
-precision-high risk|	3%	|9%
----------------------------------------------------------------
+![image](https://user-images.githubusercontent.com/90749275/155944429-2b934e95-0741-49ad-9a5e-1a663f85d894.png)
 >
-![RandomOver]()
-![SMOTE]()
-![undersample]()
-![combination]()
-![balancerandomforest]()
-![EasyEnsemble]()
+##### RandomOverSampler
+![RandomOver](https://github.com/WeiTing83/Credit_Risk_Analysis/blob/main/images/RandomOver.png)
+##### SMOTE
+![SMOTE](https://github.com/WeiTing83/Credit_Risk_Analysis/blob/main/images/SMOTE.png)
+##### undersampling ClusterCentroids
+![undersample](https://github.com/WeiTing83/Credit_Risk_Analysis/blob/main/images/undersample.png)
+##### Combination Sampling With SMOTEENN
+![combination](https://github.com/WeiTing83/Credit_Risk_Analysis/blob/main/images/combination.png)
+##### BalancedRandomForestClassifier
+![balancerandomforest](https://github.com/WeiTing83/Credit_Risk_Analysis/blob/main/images/balancdrandomforest.png)
+##### EasyEnsembleClassifier
+![EasyEnsemble](https://github.com/WeiTing83/Credit_Risk_Analysis/blob/main/images/EasyEnsemble.png)
 >
 ### Summary
 The analysis of credit card risk is imbalance case.
